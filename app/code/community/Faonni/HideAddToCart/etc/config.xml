@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Faonni
+ *  
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade module to newer
+ * versions in the future.
+ * 
+ * @package     Faonni_HideAddToCart
+ * @copyright   Copyright (c) 2015 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+	<modules>
+		<Faonni_HideAddToCart>
+			<version>1.1.1</version>
+		</Faonni_HideAddToCart>
+	</modules>
+	<global>
+		<helpers>
+			<faonni_hideaddtocart>
+				<class>Faonni_HideAddToCart_Helper</class>
+			</faonni_hideaddtocart>
+		</helpers>
+        <models>
+            <faonni_hideaddtocart>
+                <class>Faonni_HideAddToCart_Model</class>
+            </faonni_hideaddtocart>		
+        </models>		
+	</global>
+    <frontend>
+        <events>					
+			<catalog_product_is_salable_after>
+				<observers>
+					<faonni_hideaddtocart>
+						<class>faonni_hideaddtocart/observer</class>
+						<method>isSalable</method>
+					</faonni_hideaddtocart>
+				</observers>
+			</catalog_product_is_salable_after>
+            <sales_quote_product_add_after>
+                <observers>
+                    <faonni_hideaddtocart>
+                        <class>faonni_hideaddtocart/observer</class>
+                        <method>addProduct</method>
+                    </faonni_hideaddtocart>
+                </observers>
+            </sales_quote_product_add_after>			
+        </events>		
+    </frontend>
+    <default>
+        <catalog>
+            <access_option>
+                <hide_add_to_cart>0</hide_add_to_cart>
+                <apply_from_group>0</apply_from_group>
+            </access_option>
+        </catalog>
+    </default>	
+</config> 
