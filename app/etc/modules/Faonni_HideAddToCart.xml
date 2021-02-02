@@ -22,10 +22,10 @@
  */
 -->
 <config>
-	<modules>
-		<Faonni_HideAddToCart>
-			<active>true</active>
-			<codePool>community</codePool>
-		</Faonni_HideAddToCart>
-	</modules>
+    <modules>
+        <Faonni_HideAddToCart>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Faonni_HideAddToCart>
+    </modules>
 </config>

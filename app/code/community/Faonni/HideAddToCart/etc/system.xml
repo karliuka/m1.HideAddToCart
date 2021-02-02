@@ -26,12 +26,12 @@
         <catalog>
             <groups>
                 <access_option translate="label">
-					<label>Access Option</label>
+                    <label>Access Option</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1100</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>				
+                    <show_in_store>1</show_in_store>
                     <fields>
                         <hide_add_to_cart translate="label">
                             <label>Hide Add to Cart Button</label>
@@ -41,7 +41,7 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </hide_add_to_cart>					
+                        </hide_add_to_cart>
                         <apply_from_group translate="label">
                             <label>Apply From Group</label>
                             <frontend_type>multiselect</frontend_type>

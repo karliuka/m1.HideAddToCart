@@ -24,9 +24,9 @@ class Faonni_HideAddToCart_Model_Adminhtml_System_Config_Source_Customer_Group_M
     /**
      * Customer groups options array
      *
-     * @var null|array
+     * @var array
      */
-    protected $_options;
+    protected $options;
 
     /**
      * Retrieve customer groups as array
@@ -35,10 +35,10 @@ class Faonni_HideAddToCart_Model_Adminhtml_System_Config_Source_Customer_Group_M
      */
     public function toOptionArray()
     {
-        if (!$this->_options) {
-            $this->_options = Mage::getResourceModel('customer/group_collection')
+        if (null === $this->options) {
+            $this->options = Mage::getResourceModel('customer/group_collection')
                 ->loadData()->toOptionArray();
         }
-        return $this->_options;
+        return $this->options;
     }
 }
