@@ -15,5 +15,6 @@
         "map": [
             ["app/etc/modules/Faonni_HideAddToCart.xml", "app/etc/modules/Faonni_HideAddToCart.xml"],
             ["app/code/community/Faonni/HideAddToCart/", "app/code/community/Faonni/HideAddToCart/"]
+        ]
     }
 }
