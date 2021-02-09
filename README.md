@@ -2,6 +2,7 @@
 
 Since, many store owners looking to hide add to cart button in Magento, that's why we have created 
 an Hide Add To Cart extension which perfectly let you configure your selling strategy the way you want.
+
 Additionally, it is recommended to install the [Hide Price](https://github.com/karliuka/m1.HidePrice) module.
 
 ## Compatibility
