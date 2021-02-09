@@ -13,6 +13,8 @@ OpenMage LTS 19.x
 
 [Product Available from Magento2](https://github.com/karliuka/m2.ProductAvailable)
 
+## Install
+
 #### Install via Composer
 
 1. Go to installation folder
